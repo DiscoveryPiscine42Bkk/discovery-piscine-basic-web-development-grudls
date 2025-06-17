@@ -1,10 +1,16 @@
-#!/bin/bash
-
-if [ $# -eq 0 ]; then
-    echo "No arguments supplied"
-else
-    for arg in "$@"
-    do
-        echo "$arg"
-    done | head -n 3
+if [ $# -eq 0 ]
+then
+	echo "No arguments supplied";
+elif [ $# -eq 1 ]
+then
+	echo $1
+elif [ $# -eq 2 ] 
+then
+	echo $1
+	echo $2
+elif [ $# -eq 3 ]
+then
+	echo $1
+	echo $2
+	echo $3
 fi

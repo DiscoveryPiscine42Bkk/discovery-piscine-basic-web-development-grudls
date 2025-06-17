@@ -1,10 +1,9 @@
-#!/bin/bash
-
-if [ $# -eq 0 ]; then
-    echo "No arguments supplied"
+if [ $# -eq 0 ];
+then
+	echo "No arguments supplied";
 else
-    for arg in "$@"
-    do
-        mkdir "ex$arg"
-    done
+	for i in "$@";
+	do
+		touch "ex$i";
+	done
 fi
